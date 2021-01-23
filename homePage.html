@@ -142,6 +142,7 @@
 	<title>Ticaret: Selling Beyond Price</title>
 	<link rel="icon" href="icon.svg">
 	<link rel="stylesheet" type="text/css" href="homePage.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
 </head>
 <body>
 	<div class="header-container">
@@ -161,7 +162,9 @@
 			<button class="login">
 				Login
 			</button>
-			<img src="icon.svg" alt="user" width="55" height="35" class="user">
+			<span class="user">
+				<i class="fas fa-user-alt"></i>
+			</span>
 		</div>
 	</div>
 	<div class="header-desc-container">
@@ -171,7 +174,8 @@
 			</h2>
 			<p class="sub-paragraph">Grab the Change of Excitement</p>
 			<div class="search-bar-container">
-				<input type="text" id="search" class="search">
+				<input type="text" id="search" class="search" placeholder="Search the available tickets">
+				<button class="search-icon">&#x1f50d;</button>
 			</div>
 			<div class="options">
 				<span class="tickets">resell tickets</span>
@@ -210,27 +214,51 @@
 		<div class="card-container">
 			<div class="card1">
  				<img src="card-1.png">
+ 				<h4>Master</h4>
+ 				<p class="ua">U/A</p>
+ 				<h4>Master</h4>
 			</div>
 			<div class="card2">
  				<img src="card-2.png">
+ 				<h4 class="movie-name">RED</h4>
+ 				<p class="ua">U/A</p>
+ 				<h4>RED</h4>
 			</div>
 			<div class="card3">
  				<img src="card-3.png">
+ 				<h4 class="movie-name">KRACK</h4>
+ 				<p class="ua">U/A</p>
+ 				<h4>KRACK</h4>
 			</div>
 			<div class="card4">
  				<img src="card-4.png">
+ 				<h4 class="movie-name">Wonder Woman</h4>
+ 				<p class="ua">U/A</p>
+ 				<h4>Wonder Woman</h4>
 			</div>
 			<div class="card5">
  				<img src="card-1.png">
+ 				<h4 class="movie-name">Master</h4>
+ 				<p class="ua">U/A</p>
+ 				<h4>Master</h4>
 			</div>
 			<div class="card6">
  				<img src="card-2.png">
+ 				<h4 class="movie-name">RED</h4>
+ 				<p class="ua">U/A</p>
+ 				<h4>RED</h4>
 			</div>
 			<div class="card7">
  				<img src="card-3.png">
+ 				<h4 class="movie-name">KRACK</h4>
+ 				<p class="ua">U/A</p>
+ 				<h4>KRACK</h4>
 			</div>
 			<div class="card8">
  				<img src="card-4.png">
+ 				<h4 class="movie-name">Wonder Woman</h4>
+ 				<p class="ua">U/A</p>
+ 				<h4>Wonder Woman</h4>
 			</div>
 		</div>
 	</div>
@@ -247,7 +275,7 @@
 		</div>
 	</div>
 
-	
+
 	<div class="footer">
 		<div class="menu-container">
 			<p class="menu">Menu</p>
@@ -271,15 +299,19 @@
 		</div>
 		<div class="menu4-container">
 			<p class="facebook">
+				<i class="fab fa-facebook"></i>
 				Facebook
 			</p>
 			<p class="twitter">
+				<i class="fab fa-twitter"></i>
 				Twitter
 			</p>
 			<p class="instagram">
+				<i class="fab fa-instagram"></i>
 				Instagram
 			</p>
 			<p class="linkedin">
+				<i class="fab fa-linkedin"></i>
 				Linkedin
 			</p>
 		</div>
