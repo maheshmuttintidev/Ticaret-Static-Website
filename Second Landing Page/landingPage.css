@@ -1,0 +1,255 @@
+html {
+	font-family: Verdana;
+	--website-official-color: #370c50;
+	--log-color: #f01515;
+	--bg-official-color: #fcf8f8;
+}
+body {
+	margin: 0;
+	background-color: #fcf8f8;
+	-webkit-font-smoothing: antialiased;
+}
+body > div {
+	background-color: white;
+}
+.article-body > div {
+	background-color: white;
+}
+.hero-container {
+	display: flex;
+	justify-content: space-between;
+	background-color: var(--bg-official-color);
+}
+.hero-container > .logo-holder {
+	margin-left: 70px;
+}
+.hero-container > .hero-nav-holder {
+	width: 50%;
+	padding-left: 20%;
+	padding-bottom: 25px; 
+	margin-left: 45px;
+	background-color: var(--website-official-color);
+	clip-path: polygon(50% 0%, 100% 0, 100% 78%, 81% 87%, 57% 90%, 35% 84%, 17% 66%, 5% 40%, 1% 12%, 0 0);
+}
+
+.quote {
+	color: var(--website-official-color);
+	text-align: left;
+	margin-left: 104px;
+	letter-spacing: -1px;
+}
+.here {
+	align-self: flex-start;
+	margin-left: 104px;
+	color: var(--log-color);
+	margin-top: -10px;
+	font-size: 28px;
+	letter-spacing: -1.5px;
+}
+.hero-nav-holder > a {
+	display: inline-block;
+	font-size: 1.2rem;
+	margin: 15px 0 0 24px;
+	color: whitesmoke;
+	text-decoration: none;
+	padding: 7px 12px;
+	border-radius: 7px;
+	transition: 400ms ease;
+}
+
+.hero-nav-holder > a:hover {
+	background-color: rgba(255,255,255,.6);
+}
+
+.hero-nav-holder > a:last-child {
+	margin-right: 24px;
+}
+
+.fas.fa-user-alt {
+	margin-left: 12px;
+	border: 1px solid gray;
+	padding: 7px;
+	border-radius: 50%;
+}
+
+.main1-container, .main2-container, .ticket-container, .security-container {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	margin-top: 34px;
+}
+
+.card-container {
+	margin-bottom: 100px;
+	display: flex;
+	justify-content: center;
+	background-color: white !important;
+	padding: 45px 0;
+}
+
+.card-container > div {
+	margin: 0 12px;
+}
+
+.card-container > div > img {
+	width: 200px;
+	height: 100%;
+	border-radius: 50px;
+}
+
+.services-container {
+	padding: 95px 0;
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+	margin-top: 50px;
+	margin-bottom: 150px;
+}
+
+.services-container > div {
+	display: flex;
+	align-items: center;
+	width: 25%;
+	border: 2px solid transparent;
+}
+
+.service1, .service2, .service3 {
+	margin-bottom: 65px;
+}
+
+.services-container > div > span {
+	margin-left: 46px;
+	font-weight: bold;
+	font-size: 16px;
+	color: var(--website-official-color);
+}
+
+.services-container > div > span > strong {
+	color: var(--log-color);
+}
+
+.main1-container > div:first-child, .main2-container > div:first-child {
+	margin-left: 14px;
+}
+
+.main1-container > div:last-child, .ticket-container > div:last-child {
+	margin-right: 34px;
+}
+
+
+.partners-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 36px 0 63px 0;
+}
+
+.partners-container > div:last-child {
+	display: flex;
+	justify-content: space-evenly;
+	width: 100%;
+}
+
+.footer {
+	display: flex;
+	justify-content: space-around;
+	background-color: var(--website-official-color);
+	padding: 54px 0 34px;
+	color: white;
+}
+
+.article-body {
+	margin-top: 150px;
+	background-color: #fcf8f8;
+}
+
+.main1-container > div:first-child {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.btn-login {
+	text-align: center;
+	width: max-content;
+	background-color: var(--website-official-color);
+	color: white;
+	padding: 10px 24px;
+	border: 0;
+	outline: 0;
+	border-radius: 50px;
+	font-size: 1.2rem;
+	margin-top: 56px;
+	margin-left: -30%;
+	font-weight: bold;
+}
+
+.article-body > div:nth-child(even) {
+	background-color: var(--bg-official-color);
+}
+
+.security-heading {
+	width: 550px;
+	margin-left: 12%;
+	letter-spacing: -1;
+	background-color: white;
+	border-radius: 15% 10% 25% 10%;
+	padding: 74px 54px;
+}
+.ticket-container {
+	padding-bottom: 34px;
+	text-align: center;
+}
+
+.sell-heading {
+	color: var(--website-official-color);
+	font-size: 30px;
+}
+.sell-subheading {
+	color: var(--log-color);
+	font-size: 26px;
+}
+
+.footer > div:not(:last-child) > p:first-child {
+	color: var(--log-color);
+}
+
+.fab {
+	margin-right: 15px;
+}
+.kona {
+	display: inline-block;
+	margin-left: -6%;
+}
+.user > i{
+	background-color: white;
+	color: var(--website-official-color);
+}
+
+.logo-holder {
+	margin-top: 12px;
+}
+
+.main2-section2-container {
+	width: 550px;
+	margin-left: -12%;
+	letter-spacing: -1;
+	background-color: white;
+	border-radius: 15% 10% 25% 10%;
+	padding: 74px 54px;
+}
+
+.partners-heading {
+	font-size: 18px !important;
+	color: var(--website-official-color);
+}
+
+.show, .concern {
+	color: var(--website-official-color);
+	font-size: 30px;
+}
+.happiness {
+	color: var(--log-color);
+	font-size: 26px;
+}
