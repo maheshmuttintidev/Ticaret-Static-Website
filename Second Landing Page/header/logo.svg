@@ -1,10 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="141.379" height="67" viewBox="0 0 145.379 67">
-  <g id="Group_70" data-name="Group 70" transform="translate(-149 -38)">
-    <text id="T" transform="translate(177 88)" fill="#3f1757" font-size="48" font-family="Verdana" font-weight="600" font-style="italic"><tspan x="-27.696" y="0">T</tspan></text>
-    <text id="i" transform="translate(182 89)" fill="#3f1757" font-size="34" font-family="Verdana" font-weight="600" font-style="italic"><tspan x="-7.452" y="0">i</tspan></text>
-    <text id="r" transform="translate(240 89)" fill="#3f1757" font-size="39" font-family="Verdana" font-weight="600" font-style="italic"><tspan x="-10.756" y="0">r</tspan></text>
-    <text id="e" transform="translate(265 90)" fill="#3f1757" font-size="40" font-family="Verdana" font-weight="600" font-style="italic"><tspan x="-18.68" y="0">e</tspan></text>
-    <text id="t-2" data-name="t" transform="translate(279 90)" fill="#3f1757" font-size="38" font-family="Verdana" font-weight="600" font-style="italic"><tspan x="-7.744" y="0">t</tspan></text>
+  <g id="header_logo" data-name="Group 70" transform="translate(-149 -38)">
+    <text id="T" transform="translate(177 88)" fill="#3f1757" font-size="48" font-family="Poppins" font-weight="500" font-style="italic"><tspan x="-27.696" y="1">T</tspan></text>
+    <text id="i" transform="translate(182 89)" fill="#3f1757" font-size="34" font-weight="500" font-style="italic"><tspan x="-7.452" y="0">i</tspan></text>
+    <text id="r" transform="translate(240 89)" fill="#3f1757" font-size="39" font-weight="500" font-style="italic"><tspan x="-10.756" y="0">r</tspan></text>
+    <text id="e" transform="translate(265 90)" fill="#3f1757" font-size="40" font-weight="500" font-style="italic"><tspan x="-18.68" y="0">e</tspan></text>
+    <text id="t-2" data-name="t" transform="translate(279 90)" fill="#3f1757" font-size="38" font-weight="500" font-style="italic"><tspan x="-7.744" y="0">t</tspan></text>
     <g id="Group_6" data-name="Group 6" transform="translate(294.379 61.402) rotate(-180)">
       <circle id="Ellipse_9" data-name="Ellipse 9" cx="2.705" cy="2.705" r="2.705" transform="translate(0 0.846) rotate(-9)" fill="#744806"/>
       <circle id="Ellipse_8" data-name="Ellipse 8" cx="2.705" cy="2.705" r="2.705" transform="translate(6.189 5.343) rotate(-9)" fill="#744806"/>
