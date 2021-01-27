@@ -1,0 +1,13 @@
+
+login page:
+
+background opacity:70%
+user logo: size-92, 92 opacity:75%
+email id or mobile number: box-width-431,height-65, border-radius:32, fontopacity:30%, box-shadow:20
+password : box-width-431,height-65, border-radius:32, fontopacity:30%, box-shadow:20
+login button: box-color#370C50, border-radius:48, fontcolor:white, fontfamily:caros, fontstyle:semibold, fontsize-18px
+forgot password?-fontcolor:#370C50, fontstyle-regular, fontsize-18px
+Need account ? Sign Up- fontcolor:#370C50, fontstyle-regular
+google button:width-156,height-42, border-radius:11,boxcolor:#370C50
+facebook button:width-156,height-42, border-radius:11,boxcolor:#370C50
+twitter button:width-156,height-42, border-radius:11,boxcolor:#370C50

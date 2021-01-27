@@ -4,6 +4,11 @@
 }
 
 @font-face {
+  font-family: CarosLight;
+  src: url('header/caros-cufonfonts-webfont/cretype  Caros Light.woff');
+}
+
+@font-face {
 	font-family: PoppinsBlack;
 	src: url('header/poppins/Poppins-Bold.ttf');
 }
@@ -29,19 +34,23 @@ html {
 	--heading-size: 40px;
 	--sub-heading-size: 25px;
 	--button-font-size: 20px;
-	--header-font-size: 18px;
+	--header-font-size: 16px;
 	--curvy-right: 45px;
 	--margin-top: 55px;
 	--margin-right: 60px;
 	--margin-left: 60px;
 	--card-height: 401px;
 	--card-width: 260px;
+	--border-radius: 32px;
 }
 body {
-	font-family: Caros;
 	margin: 0;
 	background-color: #fcf8f8;
 	-webkit-font-smoothing: antialiased;
+}
+* {
+	font-family: Caros;
+	box-sizing: border-box;
 }
 body > div,
 .article-body > div {
@@ -65,7 +74,7 @@ body > div,
 	margin-left: var(--margin-left);
 }
 .hero-container > .hero-nav-holder {
-	width: 60%;
+	width: 80%;
 	padding-left: 15%;
 	padding-bottom: 25px; 
 	margin-left: 35px;
@@ -113,6 +122,12 @@ body > div,
 
 .main1-container,
 .main2-container,
+.ticket-container {
+	flex-wrap: wrap;
+}
+
+.main1-container,
+.main2-container,
 .ticket-container,
 .services-container,
 .security-container {
@@ -131,6 +146,7 @@ body > div,
 	position: relative;
 	z-index: 0;
 }
+
 
 .article-body > div:nth-child(odd) {
 	padding: 24px 0 100px;
@@ -319,7 +335,7 @@ body > div,
 	margin: 20% 0 0 25%;
 	font-weight: bold;
 	transition: 300ms ease-out;
-	font-family: Caros;
+	cursor: pointer;
 }
 
 .btn-login:hover {
@@ -342,7 +358,7 @@ body > div,
 	content: "";
 	position: absolute;
 	left: 0;
-	height: 135%;
+	height: 145%;
 	width: 80%;
 	background-image: url("body/movie show white background.svg");
 	background-size: contain;
@@ -384,6 +400,16 @@ body > div,
 	color: var(--log-color);
 }
 
+.footer > div > p,
+.footer > div:first-child {
+	cursor: pointer;
+	transition: 400ms ease;
+}
+
+.footer > div > p:hover {
+	text-decoration: underline;
+}
+
 .fab {
 	margin-right: 15px;
 }
@@ -410,8 +436,8 @@ body > div,
 	content: "";
 	position: absolute;
 	left: -17%;
-	top: -55%;
-	height: 170%;
+	top: -60%;
+	height: 200%;
 	width: 100%;
 	background-image: url("body/movie show white background.svg");
 	background-size: contain;
@@ -464,4 +490,177 @@ body > div,
 	z-index: -1;
 	background-image: url("body/footer curve.svg");
 	background-size: 100%;
+}
+
+.login-popup {
+	height: 100vh;
+	width: 100vw;
+	background-color: rgba(23, 23, 23, .75);
+	z-index: 8;
+	position: fixed;
+	display: none;
+	top: 0;
+	perspective: 500px;
+	perspective-origin: center;
+	transform-origin: center;
+	transform-style: preserve-3d;
+}
+
+.login-form-container {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 100%;
+	height: 70%;
+	z-index: 10;
+	background-image: url("loginpage/c curve for login.svg");
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+}
+.user-interface {
+	position: absolute;
+	top: 33%;
+	right: 28%;
+}
+
+.login-form > div:first-child {
+	width: max-content;
+	position: absolute;
+	left: 31%;
+	top: 25%;
+}
+
+.login-form > div:first-child > i {
+	font-size: 50px;
+	position: absolute;
+	top: -75px;
+	left: 65%;
+	opacity: 0.75;
+	color: var(--website-official-color);
+	border: 0;
+	padding-right: -5px;
+}
+
+.login-popup-btn {
+	border: 0;
+	outline: 0;
+	border-radius: var(--border-radius);
+	background-color: var(--website-official-color);
+	padding: 7px 24px;
+	color: white;
+	font-size: var(--header-font-size);
+	margin-left: 30%;
+	margin-top: 12px;
+	cursor: pointer;
+	transition: 400ms ease-out;
+}
+
+.login-popup-btn:hover {
+	transform: scale(1.02);
+}
+
+.login-form > div:first-child > input {
+	padding: 12px 24px;
+	border: 1.5px solid #989898;
+	box-shadow: 0 0 5px var(--website-official-color);
+	border-radius: 50px;
+	margin: 12px auto;
+	width: 85%;
+	outline: 0;
+	font-size: var(--header-font-size);
+}
+
+.btn-signup {
+	color: var(--website-official-color);
+	text-decoration: none;
+	transition: 400ms ease;
+}
+.btn-signup:hover {
+	text-decoration: underline;
+}
+
+.login-form > div > p {
+	margin-left: 20%;
+	padding-left: 10px;
+}
+
+.social-icon-container {
+	margin-left: 15%;
+	width: 100%;
+}
+
+.social-icon-container > button > i {
+	margin-right: 6px;
+}
+
+.social-icon-container > button {
+	border: 0;
+	outline: 0;
+	padding: 6px 12px 8px;
+	background-color: var(--website-official-color);
+	color: white;
+	border-radius: 11px;
+	font-size: 14px;
+	font-family: CarosLight;
+	margin-left: 12px;
+	cursor: pointer;
+}
+.close {
+	position: absolute;
+	right: 30px;
+	top: 30px;
+	color: white;
+	cursor: pointer;
+}
+
+.close:hover  i {
+	color: var(--log-color);
+}
+
+.close > i {
+	font-size: 45px;
+}
+
+.zoomin {
+	animation: zoomin ease-in 500ms;
+}
+
+.zoomout {
+	animation: zoomout ease-out 500ms;
+}
+
+@keyframes zoomin {
+	0% {
+		transform: scale(0);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
+
+@keyframes zoomout {
+	0% {
+		transform: scale(1);
+	}
+	100% {
+		transform: scale(0);
+	}
+}
+
+.sub-paragraph {
+	width: 60%;
+	font-size: 14px;
+}
+
+.ticket-container > div > .sub-paragraph {
+	position: relative;
+	left: 20%;
+}
+
+.slogan {
+	font-size: 10px;
+	margin-top: 2%;
+	margin-left: -20%;
 }
