@@ -358,7 +358,7 @@ body > div,
 	content: "";
 	position: absolute;
 	left: 0;
-	height: 145%;
+	height: 135%;
 	width: 80%;
 	background-image: url("body/movie show white background.svg");
 	background-size: contain;
