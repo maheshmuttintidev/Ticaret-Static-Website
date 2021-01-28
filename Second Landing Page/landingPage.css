@@ -587,7 +587,7 @@ body > div,
 }
 
 .social-icon-container {
-	margin-left: 15%;
+	margin-left: 20%;
 	width: 100%;
 }
 
@@ -624,7 +624,7 @@ body > div,
 }
 
 .zoomin {
-	animation: zoomin ease-in 500ms;
+	animation: zoomin ease-in 50ms;
 }
 
 .zoomout {
