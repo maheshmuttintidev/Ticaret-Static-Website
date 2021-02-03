@@ -5,14 +5,11 @@ this.onload = () => {
 			login_popup,
 			login_normal,
 			close,
-			signup,,
-			menu_holder] = [document.getElementById('user_actions'),
+			signup] = [document.getElementById('user_actions'),
 			document.getElementById('login_popup'),
 			document.getElementById('login_normal'),
 			document.getElementById('close'),
-			document.getElementById('signup'),
-			document.getElementById('menu_holder')]
-	
+			document.getElementById('signup')]
 	const popup = login_popup.style
 
 	// login_form.addEventListener('submit', handleLogin)
@@ -74,13 +71,12 @@ this.onload = () => {
 	// login_popup_btn.onclick = () => {
 	// 	document.getElementById('user_name') = username
 	// }
-
+	
 
 	user_actions.onclick = () => {
 		popup.display = 'block'
 		login_popup.classList.add('zoomin')
 	}
-	
 	login_normal.onclick = () => {
 		popup.display = 'block'
 		login_popup.classList.add('zoomin')
