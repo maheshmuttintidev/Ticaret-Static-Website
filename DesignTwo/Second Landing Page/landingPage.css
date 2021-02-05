@@ -38,8 +38,11 @@
 }
 
 html {
+    overflow-x: hidden;
     --website-official-color: #370c50;
     --log-color: #f01515;
+    --success-color: #12a912;
+    --warning-color: #fa9100;
     --bg-official-color: #fcf8f8;
     --heading-size: 40px;
     --sub-heading-size: 25px;
@@ -52,26 +55,13 @@ html {
     --card-height: 401px;
     --card-width: 260px;
     --border-radius: 32px;
-	--website-official-color: #370c50;
-	--log-color: #f01515;
-	--bg-official-color: #fcf8f8;
-	--heading-size: 40px;
-	--sub-heading-size: 25px;
-	--button-font-size: 20px;
-	--header-font-size: 16px;
-	--curvy-right: 45px;
-	--margin-top: 55px;
-	--margin-right: 60px;
-	--margin-left: 60px;
-	--card-height: 401px;
-	--card-width: 260px;
-	--border-radius: 32px;
 }
 
 body {
     margin: 0;
     background-color: #fcf8f8;
     -webkit-font-smoothing: antialiased;
+    -webkit-tap-highlight-color: transparent;
 }
 
 * {
@@ -103,12 +93,13 @@ body>div,
 }
 
 .hero-container>.hero-nav-holder {
+    position: relative;
     width: 80%;
     padding-left: 15%;
     padding-bottom: 25px;
     margin-left: 35px;
-    background-color: var(--website-official-color);
-    clip-path: polygon(50% 0%, 100% 0, 100% 78%, 81% 87%, 57% 90%, 35% 84%, 17% 66%, 5% 40%, 1% 12%, 0 0);
+    /*background-color: var(--website-official-color);
+    clip-path: polygon(50% 0%, 100% 0, 100% 78%, 81% 87%, 57% 90%, 35% 84%, 17% 66%, 5% 40%, 1% 12%, 0 0);*/
 }
 
 .quote {
@@ -124,7 +115,7 @@ body>div,
     font-size: var(--sub-heading-size);
     letter-spacing: -1.5px;
 }
-.hero-nav-holder>a {
+.hero-nav-holder > div > a {
     display: inline-block;
     font-size: var(--header-font-size);
     margin: 15px 0 0 24px;
@@ -135,11 +126,11 @@ body>div,
     transition: 400ms ease;
 }
 
-.hero-nav-holder>a:hover {
+.hero-nav-holder > div > a:hover {
     background-color: rgba(255, 255, 255, .6);
 }
 
-.hero-nav-holder>a:last-child {
+.hero-nav-holder > div >a:last-child {
     margin-right: 24px;
 }
 
@@ -331,6 +322,7 @@ body>div,
     color: white;
     z-index: 0;
     position: relative;
+    bottom: 0;
 }
 
 .footer>div:last-child {
@@ -954,6 +946,12 @@ body>div,
     transition: 400ms ease;
     cursor: pointer;
 }
+.option_bar > li > a {
+    text-decoration: none;
+}
+.option_bar > li > a:active {
+    color: black;
+}
 .option_bar > li:not(:last-child):hover {
     background-color: #f3d6c8;
 }
@@ -1016,6 +1014,12 @@ align-items: center;
     background-color: var(--log-color);
     color: white;
     font-size: 1.2rem;
+    outline: 0;
+    cursor: pointer;
+}
+.btntickets > a {
+    text-decoration: none;
+    color: inherit;
 }
 .mimg{
     height: 300px;
@@ -1037,4 +1041,344 @@ img-cast {
     border-radius: 50%;
 }
     
+
+/* theatre page css*/
+
+.theatre-list-container {
+    background-color: var(--website-official-color);
+    color: white;
+    padding: 24px 0;
+    margin: 70px 0;
+    position: relative;
+    z-index: 5;
+}
+
+.theatre-list-container::before {
+    content: '';
+    position: absolute;
+    height: 50px;
+    width: 100%;
+    background-color: var(--website-official-color);
+    top: -50px;
+}
+
+.theatre-list-container::after {
+    content: '';
+    position: absolute;
+    height: 50px;
+    width: 100%;
+    border-radius: 0 0 50% 50%;
+    background-color: white;
+    top: -60px;
+}
+
+.bottom-curve {
+    position: absolute;
+    height: 50px;
+    width: 100%;
+    background-color: var(--website-official-color);
+    top: 100%;
+    z-index: -1;
+}
+
+.bottom-curve::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    border-radius: 50% 50% 0 0;
+    background-color: white;
+    top: 20px;
+    z-index: -1;
+}
+
+.small-img-desc {
+    width: 100%;
+    z-index: 0;
+}
+
+.small-mv-container {
+    display: flex;
+    margin-left: var(--margin-left);
+    margin-top: 56px;
+}
+
+.small-mv-container > div {
+    margin: 0 0 0 12px;
+}
+
+.movie-dates-container {
+    padding: 0 0 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.status-container {
+    margin-right: var(--margin-right);
+    position: relative;
+}
+
+.status-container > span {
+    margin-left: 24px;
+    position: relative;
+}
+
+.status-container > span::before {
+    content: '';
+    position: absolute;
+    left: -20px;
+    top: 3.5px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+.status-container > span:first-child::before {
+    background-color: var(--warning-color);
+}
+
+.status-container > span:last-child::before {
+    background-color: var(--success-color);
+}
+
+.status-container > span:first-child {
+    color: var(--warning-color);
+}
+
+.status-container > span:last-child {
+    color: var(--success-color);
+}
+
+.day-container {
+    display: flex;
+    padding: 12px 24px;
+    position: relative;
+}
+
+.day-container > div {
+    margin-left: 12px;
+    position: relative;
+    text-align: center;
+}
+
+.day-container i {
+    margin-top: 12px;
+}
+
+.day-container > .tmrw-container {
+    margin-right: 12px;
+}
+
+.ystrday, .tmrw {
+    font-size: 10px;
+}
+
+.day-container > div > span::before {
+    content: '';
+    position: absolute;
+    color: var(--log-color);
+    border-radius: 50%;
+}
+
+.today-container {
+    margin-top: -8px;
+}
+
+.day-container {
+    position: relative;
+    margin-left: var(--margin-left);
+}
+
+.day-container > i {
+    position: absolute;
+    top: 60%;
+}
+
+.day-container > i:first-child {
+    left: 12px;
+}
+
+.day-container > i:last-child {
+    left: 81%;
+}
+
+.ystrday-container, .tmrw-container {
+    padding: 0 20px;
+    line-height: .7;
+    margin-top: 12px;
+}
+
+.ystrday::before,
+.tmrw::before {
+    width: 15px !important;
+    height: 15px !important;
+    color: white !important;
+    background-color: white;
+    bottom: -20px;
+}
+
+.today {
+    color: var(--log-color);
+}
+
+.today::before {
+    left: 1px;
+    top: 40px;
+    height: 25px !important;
+    width: 25px !important;
+    background-color: var(--log-color);
+}
+
+.mv-search-container {
+    width: 50%;
+    margin-top: 34px;
+    margin-bottom: 54px;
+    margin-left: var(--margin-left);
+    position: relative;
+    z-index: 0;
+}
+
+.mv-search-container > i{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 12px;
+    z-index: 2;
+    color: grey;
+}
+
+.mv-search-container > input {
+    font-size: var(--header-font-size);
+    padding: 15px 24px 15px 40px;
+    border-radius: 11px;
+    border: 0;
+    outline: 0;
+    width: 80%;
+    z-index: 1;
+}
+
+.theatre-names-container {
+    margin: 34px var(--margin-left);
+}
+
+.theatre-names-container > .theatre{
+    display: flex;
+    justify-content: space-between;
+}
+
+.theatre > .thtre-timings {
+    display: flex;    
+    align-items: center;
+    width: 50%;
+    justify-content: space-between;
+}
+
+.theatre > .thtre-timings > p {
+    background-color: white;
+    padding: 12px 24px !important;
+    border-radius: 11px;
+}
+
+.theatre > div:first-child > p {
+    color: var(--log-color);
+    font-size: 14px;
+}
+
+.warning {
+    color: var(--warning-color);
+}
+
+.success {
+    color: var(--success-color);
+}
+
+.unavailable {
+    visibility: collapse;
+}
+
+.slang {
+    width: 130%;
+    height: 100%;
+    border-top: 0;
+    background-color: var(--website-official-color);
+    border-radius: 0 0 0 100%;
+    z-index: 1;
+    margin-left: -30%;
+    padding: 0 0 104px 0;
+}
+
+.nav-container {
+    z-index: 3;
+    position: absolute;
+    top: 12px
+}
+
+.release-date {
+    display: flex;
+}
+
+.release-date > div > i {
+    color: white;
+    border-radius: 50%;
+    background-color: grey;
+    box-shadow: 0 0 0 1px grey;
+}
+
+.mv-dur {
+    margin-left: 5px;
+}
+
+.release-date > div {
+    font-size: 12px;
+}
+
+.release-date > div:last-child {
+    color: var(--log-color);
+    margin-left: 12px;
+}
+
+.slidebar {
+    /*border: 2px solid red;*/
+    margin: 0 0 12px 0;
+}
+
+.custom-progress {
+    width: 15%;
+    background-color: dodgerblue;
+    height: 10px;
+    border-radius: 50px;
+    position: relative;
+}
+
+.custom-progress::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 120%;
+    border: 2px solid dodgerblue;
+    height: 80%;
+    background-color: transparent;
+    z-index: -1;
+    border-radius: 50px;
+}
+
+.custom-progress::after {
+    content: '';
+    position: absolute;
+    left: 97%;
+    top: -2.5px;
+    height: 17px;
+    width: 17px;
+    border-radius: 50%;
+    z-index: -1;
+    background-color: dodgerblue;
+}
+
+.mre-mvs-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 34px 0 0 0;
+}
+
 
