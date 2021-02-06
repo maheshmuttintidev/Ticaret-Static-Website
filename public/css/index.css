@@ -40,6 +40,7 @@
 html {
     overflow-x: hidden;
     --website-official-color: #370c50;
+    /*--website-official-color: #8a8a8a;*/
     --log-color: #f01515;
     --success-color: #12a912;
     --warning-color: #fa9100;
@@ -682,32 +683,6 @@ body>div,
     font-size: 45px;
 }
 
-.zoomin {
-    animation: zoomin ease-in 50ms;
-}
-
-.zoomout {
-    animation: zoomout ease-out 500ms;
-}
-
-@keyframes zoomin {
-    0% {
-        transform: scale(0);
-    }
-    100% {
-        transform: scale(1);
-    }
-}
-
-@keyframes zoomout {
-    0% {
-        transform: scale(1);
-    }
-    100% {
-        transform: scale(0);
-    }
-}
-
 .sub-paragraph {
     width: 60%;
     font-size: 14px;
@@ -746,6 +721,14 @@ body>div,
 		right: 10%;
 		top: 36%;
 	}
+
+    .left-side-form-details {
+        margin-left: -154px !important;
+    }
+
+    .hero-nav-holder > div > a {
+        font-size: small;
+    }
 }
 
 @media (min-width: 600px) {
@@ -759,6 +742,12 @@ body>div,
 		right: 10%;
 		top: 37%;
 	}
+    .left-side-form-details {
+        margin-left: -134px !important;
+    }
+    .hero-nav-holder > div > a {
+        font-size: normal;
+    }
 }
 @media (min-width: 990px) {
 	.main {
@@ -771,6 +760,12 @@ body>div,
 		right: 30%;
 		top: 39.5%;
 	}
+    .left-side-form-details {
+        margin-left: -45px !important;
+    }
+    .hero-nav-holder > div > a {
+        font-size: inherit;
+    }
 }
 @media (min-width: 1100px) {
 	.main {
@@ -783,6 +778,12 @@ body>div,
 		right: 30%;
 		top: 39%;
 	}
+    .left-side-form-details {
+        margin-left: 10px !important;
+    }
+    .hero-nav-holder > div > a {
+        font-size: inherit;
+    }
 }
 @media (min-width: 1500px) {
 	.main {
@@ -795,6 +796,12 @@ body>div,
 		right: 28%;
 		top: 35%;
 	}
+    .left-side-form-details {
+        margin-left: 0px !important;
+    }
+    .hero-nav-holder > div > a {
+        font-size: inherit;
+    }
 }
 
 
@@ -1334,7 +1341,6 @@ img-cast {
 }
 
 .slidebar {
-    /*border: 2px solid red;*/
     margin: 0 0 12px 0;
 }
 
@@ -1393,3 +1399,115 @@ img-cast {
     left: var(--margin-left);
     font-size: var(--sub-heading-size);
 }
+
+.website-overview {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    z-index: 12;
+    background-image: url('../assets/illustration world map connecting.svg');
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+    z-index: 10;
+    text-align: center;
+    visibility: hidden;
+    animation: show-action 3s ease-out,
+                zoom-out 0.5s 2.5s ease-out;
+    transform-origin: top;
+}
+
+@keyframes show-action {
+    0%, 100% {
+        visibility: visible;
+    }
+}
+@keyframes zoom-out {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scaleY(0);
+    }
+}
+.website-overview::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.7);
+    z-index: 11;
+}
+
+.website-overview-sub-container {
+    z-index: 15;
+}
+
+.website-overview-sub-container > h2 {
+    color: skyblue;
+    font-size: 3rem;
+    text-shadow: 0 0 20px blue,
+                 0 0 40px blue,
+                 0 0 60px blue;
+    animation: slide-in-left 1s ease-in,
+                lights-on 1s ease-out;
+}
+.website-overview-sub-container > p {
+    color: tomato;
+    font-size: 1.2rem;
+    text-shadow: 0 0 20px red,
+                 0 0 40px red,
+                 0 0 60px red;
+    animation: slide-in-right 1s ease-in,
+                lights-on 1s ease-out;
+}
+
+.continue-btn {
+    border: 0;
+    outline: 0;
+    padding: 12px 24px;
+    border-radius: 11px;
+    background-color: orange;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: 200ms;
+    visibility: hidden;
+
+}
+.continue-btn:hover {
+    background-color: blue;
+}
+@keyframes lights-on {
+    0% {
+        text-shadow: 0 0 20px transparent,
+                 0 0 40px transparent,
+                 0 0 60px transparent;
+    }
+    100% {
+        text-shadow: 0 0 20px transparent,
+                 0 0 40px transparent,
+                 0 0 60px transparent;
+    }
+}
+@keyframes slide-in-left {
+    0% {
+        transform: translateX(-80vh);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+@keyframes slide-in-right {
+    0% {
+        transform: translateX(180vh);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
