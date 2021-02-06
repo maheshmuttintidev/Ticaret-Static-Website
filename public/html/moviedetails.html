@@ -2,17 +2,16 @@
 <html>
 <head>
     <title>TiCaret: Ticket Beyond Price</title>
-    <link rel="icon" href="header/logo.svg">
-    <link rel="stylesheet" href="landingPage.css">
+    <link rel="icon" href="../assets/logo.svg">
+    <link rel="stylesheet" href="../css/index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
-    <script src="userPage.js"></script>
+    <script src="../assets/../js/userpage_handle.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
     <div class="main">
-        <!-- Hero Container -->
         <div class="hero-container">
             <div class="logo-holder">
                 <div class="icon-svg">
@@ -40,7 +39,7 @@
                 <div class="nav-container">
                     <a href="./userPage.html" class="home">Home</a>
                     <a href="#seller" class="seller">Sell Tickets</a>
-                    <a href="./moviedetails.html" class="buyer">Buy Tickets</a>
+                    <a href="./buytickets.html" class="buyer">Buy Tickets</a>
                     <a href="#payments" class="payments">Payments</a>
                     <a href="#about" class="about">About</a>
                     <a href="#user" class="user" id="user_action_1">
@@ -50,121 +49,143 @@
                 </div>
             </div>
             <div class="menu-holder" id="menu_holder">
-                <i class="fa fa-times" id="close_menu"></i>
-                <ul class="menu_userPage">
-                    <li class="profile-section">
-                        <div class="profile-top-bar">
-                            <h3 class="userName">Hello <span id="user_name_1">vamshi</span></h3>
-                            <span class="edit">Edit Profile</span>
-                        </div>
-                        <div class="icon_holder">
-                            <i class="fas fa-user-alt"></i>
-                        </div>
-                    </li>
-                    <div class="option_bar">
-                        <li class="home">
-                            <a href="">Home</a>
-                        </li>
-                        <li class="sell_history">
-                            <a href="">Sell History</a>
-                        </li>
-                        <li class="buy_history">
-                            <a href="">Buy History</a>
-                        </li>
-                        <li class="cards">
-                            <a href="">Cards</a>
-                        </li>
-                        <li class="rewards">
-                            <a href="">Rewards</a>
-                        </li>
-                        <li class="help_support">
-                            <a href="">Help & Support</a>
-                        </li>
-                        <li class="settings">
-                            <a href="">Settings</a>
-                        </li>
-                        <li class="about_us">
-                            <a href="">About Us</a>
-                        </li>
-                        <li class="logout">
-                            <a href="">Log Out</a>
-                        </li>
+            <i class="fa fa-times" id="close_menu"></i>
+            <ul class="menu_userPage">
+                <li class="profile-section">
+                    <div class="profile-top-bar">
+                        <h3 class="userName">Hello <span id="user_name_1">vamshi</span></h3>
+                        <span class="edit">Edit Profile</span>
                     </div>
-                </ul>
+                    <div class="icon_holder">
+                        <i class="fas fa-user-alt"></i>
+                    </div>
+                </li>
+                <div class="option_bar">
+                    <li class="home">
+                        <a href="">Home</a>
+                    </li>
+                    <li class="sell_history">
+                        <a href="">Sell History</a>
+                    </li>
+                    <li class="buy_history">
+                        <a href="">Buy History</a>
+                    </li>
+                    <li class="cards">
+                        <a href="">Cards</a>
+                    </li>
+                    <li class="rewards">
+                        <a href="">Rewards</a>
+                    </li>
+                    <li class="help_support">
+                        <a href="">Help & Support</a>
+                    </li>
+                    <li class="settings">
+                        <a href="">Settings</a>
+                    </li>
+                    <li class="about_us">
+                        <a href="">About Us</a>
+                    </li>
+                    <li class="logout">
+                        <a href="">Log Out</a>
+                    </li>
+                </div>
+            </ul>
+        </div>
+        </div>
+
+        <div class="mdetails">
+            <div class="mposter">
+                <div class="mimg">
+                    <img src="../assets/../assets/movie1.svg" alt="krack">
+                </div>
+                <div class="minfo">
+                    <h3 class="mname">krack</h3>
+                    <p class="details">2h 34m, Action Romantic Thriller, UA ,10 Jan, 2021</p> 
+                    <p class="director"> Directed by : Gopichand Malinen</p>
+                    <p class="music-by"> Music by :S.Thaman</p>
+                    <p class="Cinematography"> Cinematography :G. K. Vishnu</p>
+                    <button class="btntickets">
+                        <a href="./theatre.html" target="_self">Buy Tickets</a>
+                    </button>
+                </div>
             </div>
         </div>
 
-        <!-- Movie Container  -->
-        <div class="movie-container">
-            <div class="Movie1">
-                <a href="./moviedetails.html">
-                    <img src="buy/movie1.svg" class="krackimg">
-                </a>
-                <p class="mname">Krack</p>
-                <p class="mlang">Telugu</p>
-                <p class="mvav">UA</p>
-            </div>  
-                <div class="Movie2">
-                    <a href="./moviedetails.html">
-                        <img src="buy/movie2.svg" class="img2">
-                    </a>
-                    <p class="mname">Wonder_Woman</p>
-                    <p class="mlang">Telugu</p>
-                    <p class="mvav">UA</p>
+        <div class="actors-container">
+            <div class="cast-container">
+                <h2 class="casth">
+                    Cast
+                </h2>
+                <div class="img-cast">
+                    <img src="../assets/castravi.jpg" alt="">
+                   <span class="ravi">Ravi Teja</span>
+                    <img src="../assets/cast sh.jpg" alt="">
+                    <span class="sh">Shruti Hassan</span>
+                    <img src="../assets/cast samuthirakani.jpg" alt="">
+                    <span class="sr">samuthirakani</span>
+                    <img src="../assets/cast ravishankar.jpg" alt="">
+                    <span class="sr">Ravishankar</span>
+                    <img src="../assets/cast vs.jpg" alt="">
+                    <span class="vs">Varalaxmi
+                        Sarathkumar</span>
                 </div>
-                <div class="Movie3">
-                    <a href="./moviedetails.html">
-                        <img src="buy/movie3.svg" class="img3">
-                    </a>
-                    <p class="mname">Tenet</p>
-                    <p class="mlang">Telugu</p>
-                    <p class="mvav">UA</p>
+            </div>
+            <div class="crew">
+                <h2 class="crewh">
+                    Crew
+                </h2>
+                <div class="img-crew">
+                    <img src="../assets/crew director.jpg" alt="">
+                    <span class="director">Gopichand
+                        Malineni
+                        </span>
+                    <img src="../assets/crew music.jpg" alt="">
+                    <span class="music">S.Thaman</span>
+                    <img src="../assets/crew writer.jpg" alt="">
+                    <span class="writer">Sai Madhav
+                        Burra</span>
                 </div>
-                <div class="Movie4">
-                    <a href="./moviedetails.html">
-                        <img src="buy/movie4.svg" class="img4">
-                    </a>
-                    <p class="mname">RRR</p>
-                    <p class="mlang">Telugu</p>
-                    <p class="mvav">UA</p>
-                    
-                </div>
-                <div class="Movie5">
-                    <a href="./moviedetails.html">
-                        <img src="buy/movie5.svg" class="img5">
-                    </a>
-                    <p class="mname"> Red</p>
-                    <p class="mlang">Telugu</p>
-                    <p class="mvav">UA</p>
-                </div>
-                <div class="Movie6">
-                    <a href="./moviedetails.html">
-                        <img src="buy/movie6.svg" class="img6">
-                    </a>
-                    <p class="mname">30 rojullo preminchadam ela </p>
-                    <p class="mlang">Telugu</p>
-                    <p class="mvav">UA</p>
-                </div>
-                <div class="Movie7">
-                    <a href="./moviedetails.html">
-                        <img src="buy/movie7.svg" class="img7">
-                    </a>
-                    <p class="mname">Alludu Adhurs</p>
-                    <p class="mlang">Telugu</p>
-                    <p class="mvav">UA</p>
-                    
-                </div>
-                <div class="Movie8">
-                    <a href="./moviedetails.html">
-                        <img src="buy/movie8.svg" class="img8">
-                    </a>
-                    <p class="mname">Khiladi</p>
-                    <p class="mlang">Telugu</p>
-                    <p class="mvav">UA</p>  
-                </div>
+            </div>
         </div>
 
-        <!-- Footer  -->
+
+        <div class="mre-mvs-container">
+            <h2 class="recommended-mvs">Recommended Movies</h2>
+            <div class="Movie5">
+                <a href="./moviedetails.html">
+                    <img src="../assets/movie5.svg" class="img5">
+                </a>
+                <p class="mname"> Red</p>
+                <p class="mlang">Telugu</p>
+                <p class="mvav">UA</p>
+            </div>
+            <div class="Movie6">
+                <a href="./moviedetails.html">
+                    <img src="../assets/movie6.svg" class="img6">
+                </a>
+                <p class="mname">30 rojullo preminchadam ela </p>
+                <p class="mlang">Telugu</p>
+                <p class="mvav">UA</p>
+            </div>
+            <div class="Movie7">
+                <a href="./moviedetails.html">
+                    <img src="../assets/movie7.svg" class="img7">
+                </a>
+                <p class="mname">Alludu Adhurs</p>
+                <p class="mlang">Telugu</p>
+                <p class="mvav">UA</p>
+                
+            </div>
+            <div class="Movie8">
+                <a href="./moviedetails.html">
+                    <img src="../assets/movie8.svg" class="img8">
+                </a>
+                <p class="mname">Khiladi</p>
+                <p class="mlang">Telugu</p>
+                <p class="mvav">UA</p>  
+            </div>
+        </div>
+
         <div class="footer">
             <div class="ft-menu1">
                 <div class="white-logo">
@@ -230,5 +251,5 @@
             </div>
         </div>
     </div>
-</body>            
-</html>                                
+</body>
+</html>       
