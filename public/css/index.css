@@ -956,6 +956,9 @@ body>div,
 }
 .option_bar > li > a {
     text-decoration: none;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
 }
 .option_bar > li > a:active {
     color: black;
