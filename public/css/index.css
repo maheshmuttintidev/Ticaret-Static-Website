@@ -40,8 +40,8 @@
 html {
     overflow-x: hidden;
     /*--website-official-color: #370c50;*/
-    --website-official-color: #7878a2;
-    --log-color: #e0f012;
+    --website-official-color: #191919;
+    --log-color: #39ae10;
     --success-color: #12a912;
     --warning-color: #fa9100;
     --bg-official-color: #fcf8f8;
@@ -880,8 +880,24 @@ body>div,
     flex-direction: column;
 }
 
+.msdet {
+    color: var(--log-color);
+}
+
+.mvname {
+    font-size: 24px;
+}
+
+.minfo > p {
+    font-size: 14px;
+}
+
 .mname {
     font-size: 18px;
+}
+
+.cast-hldr > span {
+    font-size: 14px;
 }
 
 .mlang {
@@ -1088,20 +1104,21 @@ body>div,
 .cast-hldr>img,
 .crew-hldr>img {
     border-radius: 50%;
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+}
+
+.cast-hldr > span,
+.crew-hldr > span {
+    margin-top: 7px;
+    font-size: 12px;
 }
 
 .cast-hldr:not(:first-child),
 .crew-hldr:not(:first-child) {
     margin-left: 24px;
 }
-
-.cast-hldr>img {
-    width: 100px;
-    height: 100px;
-}
-
 
 .movie-container>div>p {
     text-align: left;
