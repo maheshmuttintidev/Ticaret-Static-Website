@@ -37,11 +37,11 @@
                 <div class="hero-nav-holder">
                     <div class="slang"></div>
                     <div class="nav-container">
-                        <a href="#home" class="home">Home</a>
-                        <a href="#seller" class="seller">Sell Tickets</a>
-                        <a href="#buyer" class="buyer">Buy Tickets</a>
-                        <a href="#payments" class="payments">Payments</a>
-                        <a href="#about" class="about">About</a>
+                        <a href="./register.html" class="home" id="opt_home">Home</a>
+                    <a href="#seller" class="seller" id="opt_sell">Sell Tickets</a>
+                    <a href="#buyer" class="buyer" id="opt_buy">Buy Tickets</a>
+                    <a href="#payments" class="payments" id="opt_payment">Payments</a>
+                    <a href="#about" class="about" id="opt_about">About</a>
                         <a href="#user" class="user" id="user_actions">
                             User
                             <i class="fas fa-user-alt"></i>
@@ -57,7 +57,7 @@
                         <input type="text" placeholder="Full Name" id="name"><br>
                         <input type="number" placeholder="Mobile Number" id="mobile"><br>
                         <div class="otp-section">
-                            <button class="btn-otp">
+                            <button class="btn-otp" onclick="getOtp()">
                                 Get OTP
                             </button>
                             <input type="number" id="otp" placeholder="Enter OTP">
@@ -138,7 +138,7 @@
                     <p class="linkedin">
                         <i class="fab fa-linkedin"></i>
                         Linkedin
-                    <p>
+                    </p>
                 </div>
             </div>
         </div>

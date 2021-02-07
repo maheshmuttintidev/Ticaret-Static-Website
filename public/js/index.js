@@ -18,7 +18,8 @@ this.onload = () => {
 	close.onclick = () => {
 		popup.display = 'none'
 	}
-	signup.onclick = () => {
+	signup.onclick = (ev) => {
+		ev.preventDefault()
 		window.location.href = './register.html'
 	}
 }
