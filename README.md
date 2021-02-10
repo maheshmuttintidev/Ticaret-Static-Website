@@ -1,2 +1,1 @@
-# Ticaret
-This is our Personal Project to Startup Company
+# This is simple Ticaret Website using HTML, CSS and JS
