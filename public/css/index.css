@@ -39,9 +39,8 @@
 
 html {
     overflow-x: hidden;
-    /*--website-official-color: #370c50;*/
-    --website-official-color: #7878a2;
-    --log-color: #e0f012;
+    --website-official-color: #370c50;
+    --log-color: #f01515;
     --success-color: #12a912;
     --warning-color: #fa9100;
     --bg-official-color: #fcf8f8;
@@ -361,6 +360,7 @@ body>div,
     transition: 300ms ease-out;
     cursor: pointer;
     margin-right: 20px;
+    text-decoration: none;
 }
 
 .btn-buy {
@@ -1062,11 +1062,22 @@ body>div,
     flex-flow: wrap;
     justify-content: center;
     margin: auto var(--margin-left);
+    position: relative;
+}
+
+.abs-left {
+    position: absolute;
+    left: 54px;
+    top: -42px;
+}
+
+.ml-left {
+    margin-left: 54px;
 }
 
 .movie-container>div {
     width: 25%;
-    margin-top: 20px;
+    margin-top: 120px;
     height: 25%;
     text-align: center;
 }
@@ -1090,6 +1101,7 @@ body>div,
     border-radius: 50%;
     width: 100px;
     height: 100px;
+    object-fit: contain;
 }
 
 .cast-hldr:not(:first-child),
@@ -1521,14 +1533,14 @@ img-cast {
     width: 100%;
     height: 100vh;
     z-index: 12;
-    background-image: url('../assets/illustration world map connecting.svg');
+    background-image: url('../assets/intro_ticket.jpg');
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-repeat: no-repeat;
-    background-size: contain;
-    background-position: right;
+    background-size: cover;
+    background-position: center;
     z-index: 10;
     text-align: center;
     visibility: hidden;

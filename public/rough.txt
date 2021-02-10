@@ -1,0 +1,65 @@
+case "Krack":
+                   if(mname == movie){
+                    localStorage.setItem("details", "2h 34m, Action Romantic Thriller, UA ,10 Jan, 2021")
+                    localStorage.setItem("director","Directed by: Gopichand Malineni")
+                    localStorage.setItem("music_by","Music by: Thaman ")
+                    localStorage.setItem("cinematography","cinematography: Vishnu ")
+
+                   }
+                    break
+                case "Wonder_Woman":
+                    if(mname == movie){
+                    localStorage.setItem("details","2h 35m, Action & Fantasy, UA ,25 dec, 2020")
+                    localStorage.setItem("director","Directed by: Patti Jenkins")
+                    localStorage.setItem("music_by","Music by: Williams")
+                    localStorage.setItem("cinematography","cinematography: Matthew Jensen")
+                   }
+                    break
+                case "Tenet":
+                    if(mname == movie){
+                    localStorage.setItem("details","2h 30m, Action & Sci-fi, UA ,4 dec, 2020")
+                    localStorage.setItem("director","Directed by: Christopher Nolan ")
+                    localStorage.setItem("music_by","Music by: Ludwig Goransson")
+                    localStorage.setItem("cinematography","cinematography: Hoyte Van Hoytema ")
+                   }
+                    break
+                case "RRR":
+                    if(mname == movie){
+                    localStorage.setItem("details","2h 30m, Action & Drame, UA ,13 oct, 2021")
+                    localStorage.setItem("director","Directed by: S.S. Rajamouli ")
+                    localStorage.setItem("music_by","Music by: MM Keeravani")
+                    localStorage.setItem("cinematography","cinematography: K.K. Senthil Kumar ")
+                   }
+                    break   
+                case "Red":
+                    if(mname == movie){
+                    localStorage.setItem("details","2h 26m, Action & Crime Thiller, UA ,4 dec, 2021")
+                    localStorage.setItem("director","Directed by: Kishore Tirumala  ")
+                    localStorage.setItem("music_by","Music by: Mani sharma ")
+                    localStorage.setItem("cinematography","cinematography : Sameer Reddy ")
+                   }
+                    break
+                case "30 rojullo preminchadam ela":
+                    if(mname == movie){
+                    localStorage.setItem("details","2h 30m, Drama & Romance, UA ,29 jan, 2021")
+                    localStorage.setItem("director","Directed by: Munna ")
+                    localStorage.setItem("music_by","Music by: Babu Sv ")
+                    localStorage.setItem("cinematography","cinematography: Dasaradhi Sivendra ")
+                   }
+                    break
+                case "Alludu Adhurs":
+                    if(mname == movie){
+                    localStorage.setItem("details","2h 29m, Action & Romance, UA ,15 jan, 2021")
+                    localStorage.setItem("director","Directed by: Santosh Srinivas ")
+                    localStorage.setItem("music_by","Music by: DSP ")
+                    localStorage.setItem("cinematography","cinematography: Chota K.Naidu ")
+                   }
+                    break 
+                case "Khiladi":
+                    if(mname == movie){
+                    localStorage.setItem("details","2h 29m, Action , UA ,28 may, 2021")
+                    localStorage.setItem("director","Directed by: Ramesh Varma ")
+                    localStorage.setItem("music_by","Music by: DSP ")
+                    localStorage.setItem("cinematography","cinematography: Sujith Vassudev  ")
+                   }
+                    break 

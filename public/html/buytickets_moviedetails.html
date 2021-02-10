@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <title>TiCaret: Ticket Beyond Price</title>
     <link rel="icon" href="../assets/logo.svg">
@@ -8,10 +7,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
-    <script src="../js/userpage_handle.js"></script>
+    <script src="../js/buytickets_moviedetails.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-
 <body>
     <div class="main">
         <div class="hero-container">
@@ -50,12 +48,12 @@
                 <div class="slang"></div>
                 <div class="nav-container">
                     <a href="./userpage.html" class="home" id="opt_home">Home</a>
-                    <a href="#seller" class="seller" id="opt_sell">Sell Tickets</a>
+                    <a href="./selltickets.html" class="seller" id="opt_sell">Sell Tickets</a>
                     <a href="./buytickets.html" class="buyer" id="opt_buy">Buy Tickets</a>
-                    <a href="#payments" class="payments" id="opt_payment">Payments</a>
-                    <a href="#about" class="about" id="opt_about">About</a>
-                    <a href="#user" class="user" id="user_action_1">
-                        <span id="user_name">vamshi</span>
+                    <a href="./payments.html" class="payments" id="opt_payment">Payments</a>
+                    <a href="./aboutus.html" class="about" id="opt_about">About</a>
+                    <a href="#" class="user" id="user_action_1">
+                        <span id="user_name"></span>
                         <i class="fas fa-user-alt"></i>
                     </a>
                 </div>
@@ -73,32 +71,32 @@
                         </div>
                     </li>
                     <div class="option_bar">
-                        <li class="home">
-                            <a href="./userpage.html">Home</a>
+                        <li class="home" id="home_link">
+                            Home
                         </li>
-                        <li class="sell_history">
-                            <a href="">Sell History</a>
+                        <li class="sell_history" id="sell_history_link">
+                            Sell History
                         </li>
-                        <li class="buy_history">
-                            <a href="">Buy History</a>
+                        <li class="buy_history" id="buy_history_link">
+                            Buy History
                         </li>
-                        <li class="cards">
-                            <a href="">Cards</a>
+                        <li class="cards" id="cards_link">
+                            Cards
                         </li>
-                        <li class="rewards">
-                            <a href="">Rewards</a>
+                        <li class="rewards" id="rewards_link">
+                            Rewards
                         </li>
-                        <li class="help_support">
-                            <a href="">Help & Support</a>
+                        <li class="help_support" id="help_support_link">
+                            Help & Support
                         </li>
-                        <li class="settings">
-                            <a href="">Settings</a>
+                        <li class="settings" id="settings_link">
+                            Settings
                         </li>
-                        <li class="about_us">
-                            <a href="">About Us</a>
+                        <li class="about_us" id="about_us_link">
+                            About Us
                         </li>
-                        <li class="logout">
-                            <a href="./index.html">Log Out</a>
+                        <li class="logout" id="logout_link">
+                            Logout
                         </li>
                     </div>
                 </ul>
@@ -106,17 +104,17 @@
         </div>
         <div class="mdetails">
             <div class="mposter">
-                <div class="mimg">
-                    <img src="../assets/movie1.svg" alt="krack">
+                <div class="mimg" id="mv_container">
+                    <img id="movie_posture" src="../assets/movie1.svg" alt="krack">
                 </div>
                 <div class="minfo">
-                    <h3 class="mname">krack</h3>
-                    <p class="details">2h 34m, Action Romantic Thriller, UA ,10 Jan, 2021</p>
-                    <p class="director"> Directed by : Gopichand Malinen</p>
-                    <p class="music-by"> Music by :S.Thaman</p>
-                    <p class="Cinematography"> Cinematography :G. K. Vishnu</p>
-                    <button class="btntickets">
-                        <a href="./theatre.html" target="_self">Buy Tickets</a>
+                    <h3 class="mname" id="mname"></h3>
+                    <p class="details" id="details"></p>
+                    <p class="director" id="director"></p>
+                    <p class="music-by" id="music"></p>
+                    <p class="cinematography" id="cinematography"></p>
+                    <button class="btntickets" id="btntickets">
+                        <a href="./theatres.html">Buy Tickets</a>
                     </button>
                 </div>
             </div>
@@ -172,32 +170,32 @@
         <div class="mre-mvs-container">
             <h2 class="recommended-mvs">Recommended Movies</h2>
             <div class="Movie5">
-                <a href="./moviedetails.html">
-                    <img src="../assets/movie5.svg" class="img5">
+                <a href="./buytickets_moviedetails.html">
+                    <img src="../assets/movie5.svg" class="img5" id="mv_url1">
                 </a>
                 <p class="mname"> Red</p>
                 <p class="mlang">Telugu</p>
                 <p class="mvav">UA</p>
             </div>
             <div class="Movie6">
-                <a href="./moviedetails.html">
-                    <img src="../assets/movie6.svg" class="img6">
+                <a href="./buytickets_moviedetails.html">
+                    <img src="../assets/movie6.svg" class="img6" id="mv_url1">
                 </a>
                 <p class="mname">30 rojullo preminchadam ela </p>
                 <p class="mlang">Telugu</p>
                 <p class="mvav">UA</p>
             </div>
             <div class="Movie7">
-                <a href="./moviedetails.html">
-                    <img src="../assets/movie7.svg" class="img7">
+                <a href="./buytickets_moviedetails.html">
+                    <img src="../assets/movie7.svg" class="img7" id="mv_url1">
                 </a>
                 <p class="mname">Alludu Adhurs</p>
                 <p class="mlang">Telugu</p>
                 <p class="mvav">UA</p>
             </div>
             <div class="Movie8">
-                <a href="./moviedetails.html">
-                    <img src="../assets/movie8.svg" class="img8">
+                <a href="./buytickets_moviedetails.html">
+                    <img src="../assets/movie8.svg" class="img8" id="mv_url1">
                 </a>
                 <p class="mname">Khiladi</p>
                 <p class="mlang">Telugu</p>
@@ -285,6 +283,9 @@
             <i class="fas fa-angle-down"></i>
         </div>
     </div>
-</body>
+    <script>
+        
 
+    </script>
+</body>
 </html>
