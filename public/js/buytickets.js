@@ -45,7 +45,7 @@ window.onload=function(){
     }
 
     rewards_link.onclick = () => {
-        window.location.href = "./rewards.html"
+        window.location.href = "./html/rewards.html"
     }
 
     help_support_link.onclick = () => {
