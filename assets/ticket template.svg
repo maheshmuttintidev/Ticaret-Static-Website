@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64.599" height="64.599" viewBox="0 0 64.599 64.599">
+  <g id="Group_90" data-name="Group 90" transform="translate(-174.2 -280.201)">
+    <path id="Path_2461" data-name="Path 2461" d="M6.251,0a171.631,171.631,0,0,0,25.89,2.254A178.6,178.6,0,0,0,58.347,0,6.251,6.251,0,0,1,64.6,6.251v52.1A6.251,6.251,0,0,1,58.347,64.6a238.676,238.676,0,0,0-26.205-1.675A229.313,229.313,0,0,0,6.251,64.6,6.251,6.251,0,0,1,0,58.347V6.251A6.251,6.251,0,0,1,6.251,0Z" transform="translate(174.2 280.201)" fill="#370c50"/>
+    <g id="Layer_2" data-name="Layer 2" transform="translate(191 297)">
+      <g id="invisible_box" data-name="invisible box">
+        <rect id="Rectangle_219" data-name="Rectangle 219" width="31" height="31" fill="none"/>
+        <rect id="Rectangle_220" data-name="Rectangle 220" width="31" height="31" fill="none"/>
+        <rect id="Rectangle_221" data-name="Rectangle 221" width="31" height="31" fill="none"/>
+      </g>
+      <g id="Layer_6" data-name="Layer 6" transform="translate(3.24 1.296)">
+        <g id="Group_87" data-name="Group 87">
+          <path id="Path_2447" data-name="Path 2447" d="M15.3,12.592h5.185a1.3,1.3,0,1,0,0-2.592H15.3a1.3,1.3,0,0,0,0,2.592Z" transform="translate(-8.167 -4.815)" fill="#fff"/>
+          <path id="Path_2448" data-name="Path 2448" d="M15.3,20.592h5.185a1.3,1.3,0,0,0,0-2.592H15.3a1.3,1.3,0,0,0,0,2.592Z" transform="translate(-8.167 -7.631)" fill="#fff"/>
+          <path id="Path_2449" data-name="Path 2449" d="M15.3,28.592h5.185a1.3,1.3,0,0,0,0-2.592H15.3a1.3,1.3,0,0,0,0,2.592Z" transform="translate(-8.167 -10.446)" fill="#fff"/>
+          <path id="Path_2450" data-name="Path 2450" d="M29.3,12.592h1.3a1.3,1.3,0,1,0,0-2.592H29.3a1.3,1.3,0,1,0,0,2.592Z" transform="translate(-13.094 -4.815)" fill="#fff"/>
+          <path id="Path_2451" data-name="Path 2451" d="M29.3,20.592h1.3a1.3,1.3,0,1,0,0-2.592H29.3a1.3,1.3,0,0,0,0,2.592Z" transform="translate(-13.094 -7.631)" fill="#fff"/>
+          <path id="Path_2452" data-name="Path 2452" d="M29.3,28.592h1.3a1.3,1.3,0,1,0,0-2.592H29.3a1.3,1.3,0,0,0,0,2.592Z" transform="translate(-13.094 -10.446)" fill="#fff"/>
+          <path id="Path_2453" data-name="Path 2453" d="M28.331,2H6.3A1.3,1.3,0,0,0,5,3.3V28.571a.648.648,0,0,0,.648.648.713.713,0,0,0,.454-.194l4.083-2.981,2.787,2.981a.648.648,0,0,0,.907,0l3.435-2.981,3.435,2.981a.648.648,0,0,0,.907,0l2.787-2.981,4.083,2.981a.713.713,0,0,0,.454.194.648.648,0,0,0,.648-.648V3.3A1.3,1.3,0,0,0,28.331,2Zm-1.3,22.747L26,23.97l-1.879-1.361-1.555,1.685-1.491,1.555L19,24.1l-1.685-1.491L15.628,24.1l-2.074,1.75-1.491-1.555-1.555-1.685L8.629,23.97l-1.037.778V4.592H27.034Z" transform="translate(-5 -2)" fill="#fff"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
