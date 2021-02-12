@@ -1,24 +1,26 @@
 window.onload = () => {
+    const id = e => document.getElementById(e),
+        user_name = id('user_name'),
+        u1 = id('user_name_1'),
+        logout_link = id('logout_link'),
+        home_link = id('home_link'),
+        sell_history_link = id('sell_history_link'),
+        buy_history_link = id('buy_history_link'),
+        cards_link = id('cards_link'),
+        rewards_link = id('rewards_link'),
+        help_support_link = id('help_support_link'),
+        settings_link = id('settings_link'),
+        about_us_link = id('about_us_link'),
+        user_action_1 = id('user_action_1'),
+        close_menu = id('close_menu'),
+        menu_holder = id('menu_holder')
+    var login_username = localStorage.getItem("login_username")
 
-    const params = (new URL(document.location)).searchParams,
-     username = params.get('username'),
-     user_name = document.getElementById('user_name'),
-     u1 = document.getElementById('user_name_1'),
-     logout_link = document.getElementById('logout_link'),
-     home_link = document.getElementById('home_link'),
-     sell_history_link = document.getElementById('sell_history_link'),
-     buy_history_link = document.getElementById('buy_history_link'),
-     cards_link = document.getElementById('cards_link'),
-     rewards_link = document.getElementById('rewards_link'),
-     help_support_link = document.getElementById('help_support_link'),
-     settings_link = document.getElementById('settings_link'),
-     about_us_link = document.getElementById('about_us_link'),
-     user_action_1 = document.getElementById('user_action_1'),
-        close_menu = document.getElementById('close_menu'),
-        menu_holder = document.getElementById('menu_holder')
 
-    user_action_1.onclick = () => {
-        if(menu_holder.style.display == 'block') {
+
+    user_action_1.onclick = (e) => {
+        e.preventDefault()
+        if (menu_holder.style.display == 'block') {
             menu_holder.style.display = 'none'
         } else {
             menu_holder.style.display = 'block'
@@ -56,7 +58,7 @@ window.onload = () => {
     settings_link.onclick = () => {
         window.location.href = "./settings.html"
     }
-    
+
     about_us_link.onclick = () => {
         window.location.href = "./aboutus.html"
     }
@@ -64,48 +66,140 @@ window.onload = () => {
     logout_link.onclick = () => {
         window.location.href = "./index.html"
     }
-    
 
-    user_name.innerHTML = username
-    u1.innerHTML = username
 
-    var movie_posture=document.getElementById("movie_posture")
-    var mname_id=document.getElementById("mname")
+    user_name.innerHTML = login_username
+    u1.innerHTML = login_username
+
+    var movie_posture = id("movie_posture")
+    var mname_id = id("mname")
     var mname = localStorage.getItem("mname")
     var details = localStorage.getItem("details")
     var mv_url = localStorage.getItem("img_url")
-    var details_id= document.getElementById("details")
-    var director=localStorage.getItem("director")
-    var director_id=document.getElementById("director")
-    var music_by=localStorage.getItem("music_by")
-    var music_by_id=document.getElementById("music")
-    var cinematography=localStorage.getItem("cinematography")
-    var cinematography_id=document.getElementById("cinematography")
-    
-    // alert(movie_posture)
-   //first section
+    var details_id = id("details")
+    var director = localStorage.getItem("director")
+    var director_id = id("director")
+    var music_by = localStorage.getItem("music_by")
+    var music_by_id = id("music")
+    var cinematography = localStorage.getItem("cinematography")
+    var cinematography_id = id("cinematography")
+
+
+
+
+
+
+    var mname = localStorage.getItem("mname")
+
+
+    var cast_imgs = [id("hero_img"), id("heroine_img"), id("villain1_img"), id("villain2_img"), id("villain3_img")],
+        crew_imgs = [id("director_img"), id("music_img"), id("writer_img")]
+
+
+    var lc_cast_imgs_data = [
+        localStorage.getItem("hero_url"),
+        localStorage.getItem("heroine_url"),
+        localStorage.getItem("villain1_url"),
+        localStorage.getItem("villain2_url"),
+        localStorage.getItem("villain3_url")
+    ]
+
+
+
+    var lc_crew_imgs_data = [
+        localStorage.getItem("director_url"),
+        localStorage.getItem("music_url"),
+        localStorage.getItem("writer_url")
+    ]
+
+
+
+
+    var movies = ["Krack", "Wonder_Woman", "Tenet", "RRR", "Red", "30 rojullo preminchadam ela", "Alludu Adhurs", "Khiladi"]
+    movies.forEach(function(movie) {
+        switch (movie) {
+            case "Krack":
+                if (mname == movie) {
+                    for (let i = 0; i < cast_imgs.length; i++) {
+                        cast_imgs[i].src = lc_cast_imgs_data[i]
+                    }
+                    for (let i = 0; i < crew_imgs.length; i++) {
+                        crew_imgs[i].src = lc_crew_imgs_data[i]
+                    }
+                }
+                break
+            case "Wonder_Woman":
+                if (mname == movie) {
+                    for (let i = 0; i < cast_imgs.length; i++) {
+                        cast_imgs[i].src = lc_cast_imgs_data[i]
+                    }
+                    for (let i = 0; i < crew_imgs.length; i++) {
+                        crew_imgs[i].src = lc_crew_imgs_data[i]
+                    }
+                }
+                break
+            case "Tenet":
+                if (mname == movie) {
+                    alert("Tenet")
+                }
+                break
+            case "RRR":
+                if (mname == movie) {
+                    alert("RRR")
+                }
+                break
+            case "Red":
+                if (mname == movie) {
+                    alert("Red")
+                }
+                break
+            case "30 rojullo preminchadam ela":
+                if (mname == movie) {
+                    alert("30 rojullo preminchadam ela")
+                }
+                break
+            case "Alludu Adhurs":
+                if (mname == movie) {
+                    alert("Alludu Adhurs")
+                }
+                break
+            case "Khiladi":
+                if (mname == movie) {
+                    alert("Khiladi")
+                }
+                break
+
+        }
+    })
+
+
+
+    //cast and crew ids
+
+
+
     movie_posture.src = mv_url
     mname_id.innerHTML = mname
 
     details_id.innerHTML = details
     director_id.innerHTML = director
     music_by_id.innerHTML = music_by
-    cinematography_id.innerHTML = cinematography  
+    cinematography_id.innerHTML = cinematography
 
     document.addEventListener('click', (e) => {
-        e.preventDefault()
-        var opt_home = document.getElementById('opt_home')
-        var opt_sell = document.getElementById('opt_sell')
-        var opt_buy = document.getElementById('opt_buy')
-        var opt_about = document.getElementById('opt_about')
-        var opt_payment = document.getElementById('opt_payment')
-        var btntickets = document.getElementById('btntickets')
-        var mname_id=document.getElementById("mname")
-        var details_id= document.getElementById("details")
-        var director_id=document.getElementById("director")
-        var music_by_id=document.getElementById("music")
-        var cinematography_id=document.getElementById("cinematography")
-        var mv_url_id = document.getElementById("movie_posture")
+        // e.preventDefault()
+        var opt_home = id('opt_home')
+        var opt_sell = id('opt_sell')
+        var opt_buy = id('opt_buy')
+        var opt_about = id('opt_about')
+        var opt_payment = id('opt_payment')
+        var btntickets = id('btntickets')
+        var mname_id = id("mname")
+        var details_id = id("details")
+        var director_id = id("director")
+        var music_by_id = id("music")
+        var cinematography_id = id("cinematography")
+        var mv_url_id = id("movie_posture")
         const img_id = "mv_url1"
         var img_url = e.target.src
 
@@ -125,54 +219,58 @@ window.onload = () => {
             window.location.href = "./aboutus.html"
         }
         btntickets.onclick = () => {
-            window.location.href = "./theatres.html"
+            window.location.href = "./buy_theatres.html"
         }
 
-        if(e.target.id==img_id) {
+
+
+
+
+        if (e.target.id == img_id) {
             var mname = e.target.parentElement.nextElementSibling.innerText
-            mv_url_id.src=img_url
+            mv_url_id.src = img_url
             mname_id.innerHTML = mname
 
-            var movies=["Red" , "30 rojullo preminchadam ela" ,"Alludu Adhurs", "Khiladi"]
-               movies.forEach(function(movie){
-                   switch(movie) {
-                        case "Red":
-                            if(mname == movie){
-                            details_id.innerHTML=("details","2h 26m, Action & Crime Thiller, UA ,4 dec, 2021")
-                            director_id.innerHTML=("director","Directed by: Kishore Tirumala  ")
-                            music_by_id.innerHTML=("music_by","Music by: Mani sharma ")
-                            cinematography_id.innerHTML=("cinematography","cinematography : Sameer Reddy ")
-                           }
-                            break
-                        case "30 rojullo preminchadam ela":
-                            if(mname == movie){
-                            details_id.innerHTML=("details","2h 30m, Drama & Romance, UA ,29 jan, 2021")
-                            director_id.innerHTML=("director","Directed by: Munna ")
-                            music_by_id.innerHTML =("music_by","Music by: Babu Sv ")
-                            cinematography_id.innerHTML=("cinematography","cinematography: Dasaradhi Sivendra ")
-                           }
-                            break
-                        case "Alludu Adhurs":
-                            if(mname == movie){
-                            details_id.innerHTML=("details","2h 29m, Action & Romance, UA ,15 jan, 2021")
-                            director_id.innerHTML=("director","Directed by: Santosh Srinivas ")
-                            music_by_id.innerHTML=("music_by","Music by: DSP ")
-                            cinematography_id.innerHTML=("cinematography","cinematography: Chota K.Naidu ")
-                           }
-                            break 
-                        case "Khiladi":
-                            if(mname == movie){
-                            details_id.innerHTML=("details","2h 29m, Action , UA ,28 may, 2021")
-                            director_id.innerHTML=("director","Directed by: Ramesh Varma ")
-                            music_by_id.innerHTML=("music_by","Music by: DSP ")
-                            cinematography_id.innerHTML=("cinematography","cinematography: Sujith Vassudev  ")
-                           }
-                            break 
+            var re_movies = ["Red", "30 rojullo preminchadam ela", "Alludu Adhurs", "Khiladi"]
+            re_movies.forEach(function(movie) {
+                switch (movie) {
+                    case "Red":
+                        if (mname == movie) {
+                            details_id.innerHTML = ("details", "2h 26m, Action & Crime Thiller, UA ,4 dec, 2021")
+                            director_id.innerHTML = ("director", "Directed by: Kishore Tirumala  ")
+                            music_by_id.innerHTML = ("music_by", "Music by: Mani sharma ")
+                            cinematography_id.innerHTML = ("cinematography", "cinematography : Sameer Reddy ")
+                        }
+                        break
+                    case "30 rojullo preminchadam ela":
+                        if (mname == movie) {
+                            details_id.innerHTML = ("details", "2h 30m, Drama & Romance, UA ,29 jan, 2021")
+                            director_id.innerHTML = ("director", "Directed by: Munna ")
+                            music_by_id.innerHTML = ("music_by", "Music by: Babu Sv ")
+                            cinematography_id.innerHTML = ("cinematography", "cinematography: Dasaradhi Sivendra ")
+                        }
+                        break
+                    case "Alludu Adhurs":
+                        if (mname == movie) {
+                            details_id.innerHTML = ("details", "2h 29m, Action & Romance, UA ,15 jan, 2021")
+                            director_id.innerHTML = ("director", "Directed by: Santosh Srinivas ")
+                            music_by_id.innerHTML = ("music_by", "Music by: DSP ")
+                            cinematography_id.innerHTML = ("cinematography", "cinematography: Chota K.Naidu ")
+                        }
+                        break
+                    case "Khiladi":
+                        if (mname == movie) {
+                            details_id.innerHTML = ("details", "2h 29m, Action , UA ,28 may, 2021")
+                            director_id.innerHTML = ("director", "Directed by: Ramesh Varma ")
+                            music_by_id.innerHTML = ("music_by", "Music by: DSP ")
+                            cinematography_id.innerHTML = ("cinematography", "cinematography: Sujith Vassudev  ")
+                        }
+                        break
 
-                   }
-               })
-           } else {
+                }
+            })
+        } else {
 
-            }
-        })
-    }
+        }
+    })
+}

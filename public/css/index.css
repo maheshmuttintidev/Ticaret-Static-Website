@@ -895,11 +895,85 @@ body>div,
 .mname {
     font-size: 18px;
 }
-
+.cast-hldr {
+    position: relative;
+}
 .cast-hldr > span {
     font-size: 14px;
 }
 
+
+.cast-hldr:hover .cast-rv-pp {
+    display: block;
+}
+
+.crew-hldr {
+    position: relative;
+}
+.crew-hldr > .crew-rv-pp {
+    position: absolute;
+    border-radius: 5px;
+    padding: 3px 34px;
+    top: -75px;
+    z-index: 100;
+    font-size: 80%;
+    background-color: var(--log-color);
+    color: white;
+    display: none;
+    transform-origin: top;
+    animation: pop .3s ease-out;
+}
+
+.crew-hldr:hover > .crew-rv-pp{
+    display: block;
+}
+
+.crew-hldr > div > a:hover {
+    text-decoration: underline;
+    color: navy;
+}
+
+.crew-hldr > div > a {
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    margin-bottom: 4px;
+    font-size: small;
+}
+
+.cast-hldr > div > a {
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    margin-bottom: 4px;
+    font-size: small;
+}
+.cast-hldr > div > a:hover {
+    text-decoration: underline;
+    color: navy;
+}
+
+.cast-hldr > .cast-rv-pp {
+    position: absolute;
+    border-radius: 5px;
+    padding: 4px 34px;
+    top: -75px;
+    z-index: 100;
+    font-size: 80%;
+    background-color: var(--log-color);
+    color: white;
+    display: none;
+    transform-origin: top;
+    animation: pop .3s ease-out;
+}
+@keyframes pop {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
 .mlang {
     font-size: 14px;
 }

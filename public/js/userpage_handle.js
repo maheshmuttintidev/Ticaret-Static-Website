@@ -15,8 +15,11 @@ this.onload = function() {
      user_action_1 = document.getElementById('user_action_1'),
         close_menu = document.getElementById('close_menu'),
         menu_holder = document.getElementById('menu_holder')
+        localStorage.setItem("login_username", username)
+    var login_username = localStorage.getItem("login_username")
 
-    user_action_1.onclick = () => {
+    user_action_1.onclick = (e) => {
+        // e.preventDefault()
         if(menu_holder.style.display == 'block') {
             menu_holder.style.display = 'none'
         } else {
@@ -65,6 +68,6 @@ this.onload = function() {
     }
     
 
-    user_name.innerHTML = username
-    u1.innerHTML = username
+    user_name.innerHTML = login_username
+    u1.innerHTML = login_username
 }
